@@ -1,0 +1,48 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ :root{
+    --primary-color: #7cae7a;
+    --secondary-color: #394053;
+    --accent1-color: #839073;
+    --accent2-color:#6E6362;
+    --heading-font: 'Inter', serif;
+    --paragraph-font:'Inter',serif;
+    --nav-background-color: #7cae7a;
+    --nav-link-color: #394053;
+    --nav-hover-link-color: ##839073;
+    --nav-hover-background-color: #6e6362;
+ }
+ body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+ }
+ h1,h2,h3,h4,h5,h6{
+    font-family: : var(--heading-font);
+    color: var(--primary-color);
+ }
+ header{
+    padding: 20px
+    background-color: var(--accent1-color)
+ }
+ p{
+    padding: 25px
+ }
+ nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+ }
+ nav a {
+    display: block;
+    color: var(--nav-link-color)
+    text-decoration: none;
+    padding: 1rem;
+ }
+ nav a: link, nav a: visited{
+    color: var(--nav-link-color);
+ }
+ nav a: hover{
+    color: var(--nav-hover-link-color);
+    backround-color: var(--nav-hover-background-color);
+ }
