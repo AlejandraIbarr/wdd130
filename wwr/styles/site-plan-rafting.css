@@ -25,12 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    padding: 20px; /* Added a semicolon here */
+    padding: 20px; 
     background-color: var(--accent1-color);
 }
 
 p {
-    padding: 25px; /* Added a semicolon here */
+    padding: 25px; 
 }
 
 nav {
@@ -53,5 +53,5 @@ nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color); /* Corrected the typo in background */
+    background-color: var(--nav-hover-background-color); 
 }

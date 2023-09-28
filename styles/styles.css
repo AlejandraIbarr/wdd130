@@ -5,19 +5,19 @@ nav {
 
 nav a {
     color: white;
-    padding: 10px; /* Added a semicolon here */
+    padding: 10px;
     display: block;
 }
 
 h1 {
-    color: seagreen; /* Added a semicolon here */
+    color: seagreen;
 }
 
 img {
     width: 150px;
     height: auto;
     border: 1px solid seagreen;
-    padding: 2px; /* Added a semicolon here */
+    padding: 2px;
     box-shadow: 0 0 30px white;
 }
 
@@ -31,11 +31,6 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Removed the space before the parenthesis */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
 }
 
@@ -44,14 +39,33 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    margin-top: 10px;
+}
+
 main img {
     width: 150px;
     height: auto;
+    float: right;
 }
 
-/* Corrected the spelling of "solid" and added a semicolon */
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
