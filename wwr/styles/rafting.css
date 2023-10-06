@@ -25,18 +25,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
     background-color: var(--accent1-color);
 }
 
-p {
-    padding: 25px;
+header img {
+    width: 100px;
+    height: auto;
 }
 
 nav {
-    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -53,11 +58,56 @@ nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color); /* Added semicolon here */
+    background-color: var(--nav-hover-background-color);
 }
 
-.hero img {
-    display: block;
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.history h2 {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+.history p {
+    padding: 15px;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.adventures figure {
+    margin: 10px;
+    text-align: center;
+}
+
+.adventures img {
     width: 100%;
     height: auto;
+}
+
+.adventures figcaption {
+    font-family: var(--paragraph-font);
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
 }
