@@ -1,3 +1,11 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Styles */
 nav {
     background-color: seagreen;
     padding: 10px;
@@ -11,7 +19,7 @@ nav a {
     padding: 10px;
     display: block;
     text-decoration: none;
-    font-size: 1.2em; 
+    font-size: 1.2em;
     font-weight: 700;
 }
 
@@ -27,67 +35,67 @@ img {
     box-shadow: 0 0 30px white;
 }
 
-p {
+p, .box {
     padding: 10px;
 }
 
-.grid {
-    display: grid;
-    align-items: center;
-}
-
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
-
-aside {
-    width: 20rem;
-    text-align: center;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-aside h2 {
-    margin-top: 10px;
-}
-
-
-main img {
-    width: 150px;
-    height: auto;
-    float: right;
-}
-
-footer {
-    margin-top: 2em; 
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
-
-header, .grid, footer {
+/* Page Layout */
+.header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
+/* Home Page Styles */
+.hero {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.newsletter {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter label,
+.newsletter input,
+.newsletter button {
+    margin: 0.5rem;
+}
+
+.cta {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 2rem 0;
+}
+
+.grid-item {
+    text-align: center;
+}
